@@ -4,6 +4,7 @@
  * ------------------------------------------------------------------- */
 // Circle
 const circle = document.getElementById('circle');
+const innerCircle = document.getElementById('innerCircle');
 
 document.addEventListener('mousemove', (e) => {
     const x = e.clientX;
@@ -28,6 +29,10 @@ document.addEventListener('mousemove', (e) => {
         circle.style.left = `${x - 20}px`;
         circle.style.top = `${y - 20}px`;
     }, 20);
+    setTimeout(() => { 
+        innerCircle.style.left = `${x - 7}px`;
+        innerCircle.style.top = `${y - 7}px`;
+    }, 10);
 });
 
 
